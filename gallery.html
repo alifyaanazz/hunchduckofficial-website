@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hunchduck Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+    }
+
+    .slider {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 20px;
+      padding-bottom: 20px;
+    }
+
+    .slider img {
+      height: 400px;
+      border-radius: 8px;
+      border: 2px solid #fff;
+      scroll-snap-align: center;
+      flex: 0 0 auto;
+    }
+
+    a.back-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #fff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    a.back-btn:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hunchduck Design Gallery</h1>
+    <div class="slider">
+      <img src="brand1.jpg.jpeg" alt="Design 1">
+      <img src="brand2.jpg.jpeg" alt="Design 2">
+      <img src="brand3.jpg.jpeg" alt="Design 3">
+      <!-- Tambah gambar lain sesuai kebutuhan -->
+    </div>
+
+    <a href="index.html" class="back-btn">← Back to Home</a>
+  </div>
+</body>
+</html>
